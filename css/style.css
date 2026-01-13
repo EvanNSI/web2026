@@ -3,13 +3,18 @@
         background-color :rgb(168, 168, 168);
     }
     p {
-        color :crimson;
-        background-color :mediumblue;
-        width: 500px;
+        color :rgb(255, 255, 255);
+        background-color :rgb(0, 62, 113);
+        width: 100%; /*Toute la largeur du conteneur*/ 
+        text-align: justify;
     }
      
     .deux{
-        background-color :rgb(0, 0, 255);
+        background-color :rgb(0, 62, 113);
+        font-size: 25px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-style: bold;
+        font-style: oblique;
     }
 
     img{
@@ -18,5 +23,17 @@
         border-style: solid;
         border-width: 4px;
         border-color: white;
-        border-radius: 80px;;
+        border-radius: 80px;
+        padding: 10px;
+        margin-left: 40%;
+        margin-top: 40px;
+    }
+
+    .boite1{
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        width: 50%;
+        background-color :rgb(0, 62, 113);
+        margin-left: 25%;
     }
