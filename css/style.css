@@ -18,13 +18,13 @@
     }
 
     img{
-        height: 150px;
+        height: 200px;
         /*width: 200px;*/
         border-style: solid;
         border-width: 4px;
         border-color: white;
-        border-radius: 80px;
-        margin-left: 40%;
+        border-radius: 100px;
+        margin-left: 43%;
         margin-top: 40px;
     }
 
@@ -35,4 +35,11 @@
         width: 50%;
         background-color :rgb(0, 62, 113);
         margin-left: 25%;
+    }
+
+    #login{
+        border-style: solid;
+        border-width: 1px;
+        width: 30%;
+        margin-left: 35%;
     }
