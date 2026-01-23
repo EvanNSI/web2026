@@ -85,7 +85,22 @@ Il existe de nombreuses propriétés relatives au texte :
 
 3. Javascript (JS)
 
-C'est le language de programmation qui permet de gérer les éléments interactifs d'une page HTML.
+C'est le language de programmation qui permet de gérer les éléments interactifs d'une page HTML. C'est le DOM ( Document Object Model ):
+
+window
+├── alert()
+└── document
+    ├── getElementById()
+    ├── querySelector()
+    │       ↓
+    │   élément HTML
+    │       ├── innerHTML
+    │       ├── style
+    │       │     ├── color
+    │       │     ├── backgroundColor
+    │       │     └── display
+    │       └── addEventListener()
+
 
 Historiquement, les éléments d'intéractions étaient placés dans un formulaire `<form></form>` pour renvoyer des informations au serveur.
 
