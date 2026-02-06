@@ -69,6 +69,12 @@ Syntaxe générale : `nom --option argument` ou `nom -option argument`
 |`rm`|supprimer des fichiers ou des dossiers|`$ rm -r ./mondossier`|
 |`mv`|couper / renommer des fichiers|`$ mv ./monFichier ./nouveauNom`|
 |`chmod`|modifie les permissions|`$ mv chmod 777 ./monFichier`|
+|`head`|affiche les premières lignes d'un fichier|`$ head -n 4 ./monFichier`|
+|`tail`|affiche les dernières lignes d'un fichier|`$ tail -n 3 ./monFichier`|
+|`grep`|recherche une chaîne de caractère|`$ grep chaine ./monFichier`|
+|`echo`|retourne une chaîne de caractère (par défaut sur le terminal)|`$ echo "chaine"`|
+|`history`|retourne l'historique des commandes|`$ history`|
+|`find`|rechercher un fichier dans une arborescence|`$ find ./ -name "fichier"`|
 
 
 -------------
@@ -133,3 +139,38 @@ chmod 754 ./monFichier.sh  # rwx pour user, rx pour group et x pour other
 ```bash
 chmod u-x,g-x,o+w ./monFichier.sh  # retire x pour user et group, ajoute w pour other
 ```
+
+-------------
+L'opérateur `>` ou `>>` permet de rediriger la sortie vers un fichier ; si le fichier n'existe pas alors il est crée.
+```bash
+commande > fichier
+```
+
+Le signe `>>` permet de ne pas écraser le contenu du fichier. Il est fréquent d'utiliser `echo` avec l'option `-e` pour remplir un fichier.
+
+```bash
+echo -e "code en python
+........
+...." > fichier.py
+```
+
+La commande `python` suivie du chemin vers un fichier `.py` exécute le code python.
+
+# Ex1
+[https://codex.forge.apps.education.fr/exercices/course_cycliste/](https://codex.forge.apps.education.fr/exercices/course_cycliste/)
+
+# Ex2
+[https://codex.forge.apps.education.fr//exercices/syracuse/](https://codex.forge.apps.education.fr//exercices/syracuse/)
+
+-------------
+
+Le *file globbing*: 
+C'est une technique permettant de rechercher des fichiers sans en connaître nécessairement le nom complet et à l'aide de *wildcard*. On peut utiliser cette technique avec `ls`, `rm`, `cp`, ...
+
+|Wildcard|Signification|Exemple|
+|`*`|autant de carctères que souhaité|`ls file*`|
+|`?`|exactement un caractère|`ls file?.log`|
+|`[abc]` ou `[a-c]`|un caractère parmi la liste|`ls file[1A].log`|
+|`[!a-f]`|un caractère exclu de la liste|`ls file[!1A].*`|
+||||
+||||

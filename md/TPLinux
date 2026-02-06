@@ -34,3 +34,28 @@ Appliquer la commande uniq à fic3.txt et commenter.
 Appliquer la commande sort à fic3.txt et commenter.
 Afficher le nombre de lignes et de mots dans fic3.txt
 Afficher tous les fichiers et dossiers cachés du répertoire /workspaces/web2026
+
+correction
+- pwd
+- ls
+- mkdir ./Dossier1
+- Dossier1 apparaît surligné en vert (comme tous les dossiers)
+- cd ./Dossier1
+- pwd
+- touch ./fic1.txt
+- cd ../ ou cd /workspaces/web2026
+- l'option -F ajouter un slash après les dossiers
+- cp ./Dossier1/fic1.txt ./Dossier1/fic2.txt puis cp ./Dossier1/fic1.txt ./fic3.txt
+- mv ./Dossier1/fic1.txt ./Dossier1/FichierNSI
+- Les fichiers n'ont pas obligatoirement d'extension.
+- tree
+- On remonte un rang en arrière dans l'arborescence
+- rmdir ne peut pas supprimer un dossier non vide
+- rm -i pose une question y/n avant chaque supppression
+mkdir ./DA ./DA/DB ./DA/DC
+cd ./DA/DC puis pwd
+cd ../../ permet de remonter de 2 rangs
+head -n 4 ./fic3.txt
+tail -n 3 ./fic3.txt
+cat ./fic3.txt
+grep aime ./fic3.txt
