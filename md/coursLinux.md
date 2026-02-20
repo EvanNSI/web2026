@@ -120,7 +120,7 @@ Pour exécuter ce fichier,
 ./monFichier.sh
 ```
 
-PAr défaut les fichiers Linux ne sont pas exécutables. Quand un fichier (un dossier) est crée, il possède des **permissions** qui peuvent être différentes pour :
+Par défaut les fichiers Linux ne sont pas exécutables. Quand un fichier (un dossier) est crée, il possède des **permissions** qui peuvent être différentes pour :
 - `user` c'est le propriétaire
 - `group` c'est un groupe d'utilisateurs défini par `user`
 - `other` c'est le reste du monde
